@@ -31,7 +31,7 @@ namespace EqualStringsConsole
             bool x = equal(a, b);
             Console.WriteLine(x);
 
-            //using lambda
+            //using lambda and func to check equal
             Func<string, string, bool> replaceExtra = (a, b) => a == b;
             Console.WriteLine(replaceExtra(a, b));
             }
