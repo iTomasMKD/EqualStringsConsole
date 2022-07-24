@@ -7,7 +7,7 @@ namespace Tests
     {
         [Test]
         public void FindEqualHappyPathReturnProperResult()
-          {
+        {
             //Arrange
             string testA = "xyz";
             string testB = "xyz";
@@ -15,13 +15,24 @@ namespace Tests
             var result = GenericEqual.FindEqual(testA, testB);
             //Assert
             Assert.IsTrue(result);
-          }
+        }
 
         [Test]
         public void CheckNotEqualPathReturnProperResult()
         {
             //Arrange
             string testA = "xyz";
+            string testB = "xy";
+            //Act
+            var result = GenericEqual.FindEqual(testA, testB);
+            //Assert
+            Assert.IsFalse(result);
+        }
+        [Test]
+        public void CheckNulllPathReturnProperResult()
+        {
+            //Arrange
+            string testA = null;
             string testB = "xy";
             //Act
             var result = GenericEqual.FindEqual(testA, testB);
