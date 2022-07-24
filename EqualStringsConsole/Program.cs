@@ -15,9 +15,9 @@ namespace EqualStringsConsole
                 return false;
             }
         }
-            static void Main(string[] args)
+        static void Main(string[] args)
         {
-            
+
             string a = "y";
             string b = "y";
 
@@ -34,6 +34,6 @@ namespace EqualStringsConsole
             //using lambda and func to check equal
             Func<string, string, bool> replaceExtra = (a, b) => a == b;
             Console.WriteLine(replaceExtra(a, b));
-            }
+        }
     }
 }
