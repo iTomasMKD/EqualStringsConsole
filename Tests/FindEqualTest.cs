@@ -17,10 +17,8 @@ namespace Tests
             //Arrange
             string testA = "xyz";
             string testB = "xyz";
-
             //Act
             var result = GenericEqual.FindEqual(testA, testB);
-
             //Assert
             Assert.IsTrue(result);
           }
@@ -31,10 +29,8 @@ namespace Tests
             //Arrange
             string testA = "xyz";
             string testB = "xy";
-
             //Act
             var result = GenericEqual.FindEqual(testA, testB);
-
             //Assert
             Assert.IsFalse(result);
         }
